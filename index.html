@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
+    <script defer src="/js/index.js"></script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -24,9 +25,11 @@
     <div class="container">
         <nav>
             <div class="nav-wrapper">
-                <form>
+                <form action="#">
                     <div class="input-field">
-                        <input id="search" type="search" required>
+                        <input id="search" type="search" placeholder="Escribe y busca lo que necesites" required>
+                        <input type="text" name="texto" value="" aria-hidden="true" disabled=""  style="text-align: left; line-height: 16px; letter-spacing: 0px; font-weight: 400; border-color: rgb(0, 0, 0); border-style: none; margin: -22px 0px 0px -3px; border-radius: 0px; padding: 0px;">
+                        <input type="submit" aria-hidden="true" aria-label="Hidden button" style="width: 0px; height: 0px; visibility: hidden; text-align: left; line-height: 16px; letter-spacing: 0px; font-weight: 400; border-color: rgb(255, 255, 255); border-style: none; margin: -1px; border-radius: 0px; padding: 1px 0px 0px;">
                         <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                         <i class="material-icons">close</i>
                     </div>
