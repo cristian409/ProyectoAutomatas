@@ -1,0 +1,13 @@
+.responsive-img{
+    width: 100%;
+}
+
+#search{
+    background-color: #21618C/*#D5D8DC*/;
+    color: #FFFFFF;
+    border-radius: 2em;
+}
+
+.container nav{
+    background-color: unset;
+}
