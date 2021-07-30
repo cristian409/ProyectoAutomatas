@@ -1,9 +1,17 @@
 function Busqueda() {
     let palabrasClave = [
+        "academico", "alimentacion", "añadir", "asignatura",
+        "baja", "becas", "busqueda",
+        "calificaciones", "cancelar", "cambio", "carnet", "catalogo", "certificados", "cita",
+        "clase", "clases", "compensacion", "contraseña", "cuenta", "curso", "cursos", "consultar",
         "lista",
         "materia",
-        "historial", "horario", "generar", "grado",
-        "tramite", "recibo", "diploma", "impresion", "inscripcion",
+        "historial", "horario",
+        "generar", "grado",
+        "tramite",
+        "recibo",
+        "diploma",
+        "impresion", "inscripcion",
         "pago", "perfil", "plan", "planificador", "progreso",
         "saldo", "solicitud", "subsidio"
     ];
@@ -865,7 +873,291 @@ function Busqueda() {
                                             </a>
                                         </div>
                                     `;
-                                    console.log(`Carnet, Diploma y Grado`)
+                                }
+                            });
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        //a
+        if (cadena[pos] == 'a' && estadoActual == 'q0') {
+            estadoActual = 'q1';
+            pos++
+
+            //Academico
+            if (cadena[pos] == 'c' && estadoActual == 'q1') {
+                estadoActual = 'q2';
+                pos++
+                if (cadena[pos] == 'a' && estadoActual == 'q2') {
+                    estadoActual = 'q3';
+                    pos++
+                    if (cadena[pos] == 'd' && estadoActual == 'q3') {
+                        estadoActual = 'q4';
+                        pos++
+                        if (cadena[pos] == 'e' && estadoActual == 'q4') {
+                            estadoActual = 'q5';
+                            pos++
+                            if (cadena[pos] == 'm' && estadoActual == 'q5') {
+                                estadoActual = 'q6';
+                                pos++
+                                if (cadena[pos] == 'i' && estadoActual == 'q6') {
+                                    estadoActual = 'q7';
+                                    pos++
+                                    if (cadena[pos] == 'c' && estadoActual == 'q7') {
+                                        estadoActual = 'q8';
+                                        pos++
+                                        if (cadena[pos] == 'o' && estadoActual == 'q8') {
+                                            estadoActual = 'z';
+                                            palabrasClave.forEach(palabra => {
+                                                if (palabra == cadena) {
+                                                    document.getElementById("estados").innerHTML = `
+                                                    <div class="content">
+                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                            <h6> Progreso Academico </h6>
+                                                            <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
+                                                        </a>
+                                                    </div> 
+                                                    <div class="content">
+                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Mi plan Academico </h6>
+                                                        <p class="grey-text text-darken-2"> Observar el listado de las asignaturas del programa </p>    
+                                                        </a>
+                                                    </div>                                                                    
+                                                `;
+                                                }
+                                            });
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //alimentacion
+            if (cadena[pos] == 'l' && estadoActual == 'q1') {
+                estadoActual = 'q10';
+                pos++
+                if (cadena[pos] == 'i' && estadoActual == 'q10') {
+                    estadoActual = 'q11';
+                    pos++
+                    if (cadena[pos] == 'm' && estadoActual == 'q11') {
+                        estadoActual = 'q12';
+                        pos++
+                        if (cadena[pos] == 'e' && estadoActual == 'q12') {
+                            estadoActual = 'q13';
+                            pos++
+                            if (cadena[pos] == 'n' && estadoActual == 'q13') {
+                                estadoActual = 'q14';
+                                pos++
+                                if (cadena[pos] == 't' && estadoActual == 'q14') {
+                                    estadoActual = 'q15';
+                                    pos++
+                                    if (cadena[pos] == 'a' && estadoActual == 'q15') {
+                                        estadoActual = 'q16';
+                                        pos++
+                                        if (cadena[pos] == 'c' && estadoActual == 'q16') {
+                                            estadoActual = 'q17';
+                                            pos++
+                                            if (cadena[pos] == 'i' && estadoActual == 'q17') {
+                                                estadoActual = 'q18';
+                                                pos++
+                                                if (cadena[pos] == 'o' && estadoActual == 'q18') {
+                                                    estadoActual = 'q19';
+                                                    pos++
+                                                    if (cadena[pos] == 'n' && estadoActual == 'q19') {
+                                                        estadoActual = 'z';
+                                                        palabrasClave.forEach(palabra => {
+                                                            if (palabra == cadena) {
+                                                                document.getElementById("estados").innerHTML = `
+                                                                    <div class="content">
+                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                            <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                            <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="content">
+                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                            <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                            <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>    
+                                                                        </a>
+                                                                    </div>                                                                      
+                                                                `;
+                                                            }
+                                                        });
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //añadir
+            if (cadena[pos] == 'ñ' && estadoActual == 'q1') {
+                estadoActual = 'q21';
+                pos++
+                if (cadena[pos] == 'a' && estadoActual == 'q21') {
+                    estadoActual = 'q22';
+                    pos++
+                    if (cadena[pos] == 'd' && estadoActual == 'q22') {
+                        estadoActual = 'q23';
+                        pos++
+                        if (cadena[pos] == 'i' && estadoActual == 'q23') {
+                            estadoActual = 'q24';
+                            pos++
+                            if (cadena[pos] == 'r' && estadoActual == 'q24') {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Planificador </h6>
+                                                <p class="grey-text text-darken-2"> Guardar una selección de materias previamente a la inscripción de materias en el ciclo. </p>    
+                                            </a>
+                                        </div>
+                                    `;
+                                    }
+                                });
+                                break;
+                            }
+
+                        }
+                    }
+                }
+            }
+            //asignatura
+            if (cadena[pos] == 's' && estadoActual == 'q1') {
+                estadoActual = 'q26';
+                pos++
+                if (cadena[pos] == 'i' && estadoActual == 'q26') {
+                    estadoActual = 'q27';
+                    pos++
+                    if (cadena[pos] == 'g' && estadoActual == 'q27') {
+                        estadoActual = 'q28';
+                        pos++
+                        if (cadena[pos] == 'n' && estadoActual == 'q28') {
+                            estadoActual = 'q29';
+                            pos++
+                            if (cadena[pos] == 'a' && estadoActual == 'q29') {
+                                estadoActual = 'q30';
+                                pos++
+                                if (cadena[pos] == 't' && estadoActual == 'q30') {
+                                    estadoActual = 'q31';
+                                    pos++
+                                    if (cadena[pos] == 'u' && estadoActual == 'q31') {
+                                        estadoActual = 'q32';
+                                        pos++
+                                        if (cadena[pos] == 'r' && estadoActual == 'q32') {
+                                            estadoActual = 'q33';
+                                            pos++
+                                            if (cadena[pos] == 'a' && estadoActual == 'q33') {
+                                                estadoActual = 'z';
+                                                palabrasClave.forEach(palabra => {
+                                                    if (palabra == cadena) {
+                                                        document.getElementById("estados").innerHTML = `
+                                                            <div class="content">
+                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                    <h6> Inscripcion de Asignaturas </h6>
+                                                                    <p class="grey-text text-darken-2"> Generar la inscripción de las materias o asignaturas del semestre. </p>    
+                                                                </a>
+                                                            </div>
+                                                            <div class="content">
+                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                    <h6> Inscripción de clase – Número de Curso </h6>
+                                                                    <p class="grey-text text-darken-2"> Inscripción de materias según el numero de la asignatura.</p>    
+                                                                </a>
+                                                            </div>
+                                                            <div class="content">
+                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                    <h6> Inscripción de clase – Búsqueda de clase </h6>
+                                                                    <p class="grey-text text-darken-2"> Búsqueda de la asignatura para la inscripción o la inserción en el planificador. </p>    
+                                                                </a>
+                                                            </div>                                                              
+                                                        `;
+                                                    }
+                                                });
+                                                break;
+                                            }
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //b
+        if (cadena[pos] == 'b' && estadoActual == 'q0') {
+            estadoActual = 'p35';
+            pos++
+
+            //baja
+            if (cadena[pos] == 'a' && estadoActual == 'p35') {
+                estadoActual = 'p36';
+                pos++
+                if (cadena[pos] == 'j' && estadoActual == 'p36') {
+                    estadoActual = 'p37';
+                    pos++
+                    if (cadena[pos] == 'a' && estadoActual == 'p37') {
+                        estadoActual = 'z';
+                        palabrasClave.forEach(palabra => {
+                            if (palabra == cadena) {
+                                document.getElementById("estados").innerHTML = `
+                                    <div class="content">
+                                        <a href="/views/consultaSaldoCuenta.html">
+                                            <h6> Baja de Clases </h6>
+                                            <p class="grey-text text-darken-2"> Cancelacion de clases. </p>    
+                                        </a>
+                                    </div>
+                                `;
+                            }
+                        });
+                        break;
+                    }
+                }
+            }
+
+            //becas
+            if (cadena[pos] == 'e' && estadoActual == 'p35') {
+                estadoActual = 'p39';
+                pos++
+                if (cadena[pos] == 'c' && estadoActual == 'p39') {
+                    estadoActual = 'p40';
+                    pos++
+                    if (cadena[pos] == 'a' && estadoActual == 'p40') {
+                        estadoActual = 'p41';
+                        pos++
+                        if (cadena[pos] == 's' && estadoActual == 'p41') {
+                            estadoActual = 'z';
+                            palabrasClave.forEach(palabra => {
+                                if (palabra == cadena) {
+                                    document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                        <a href="/views/consultaSaldoCuenta.html">
+                                            <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
+                                            <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
+                                        </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
+                                                <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>    
+                                            </a>
+                                        </div>   
+                                    `;
                                 }
                             });
                             break;
@@ -874,24 +1166,705 @@ function Busqueda() {
                 }
             }
 
+            //busqueda
+            if (cadena[pos] == 'u' && estadoActual == 'p35') {
+                estadoActual = 'p43';
+                pos++
+                if (cadena[pos] == 's' && estadoActual == 'p43') {
+                    estadoActual = 'p44';
+                    pos++
+                    if (cadena[pos] == 'q' && estadoActual == 'p44') {
+                        estadoActual = 'p45';
+                        pos++
+                        if (cadena[pos] == 'u' && estadoActual == 'p45') {
+                            estadoActual = 'p46';
+                            pos++
+                            if (cadena[pos] == 'e' && estadoActual == 'p46') {
+                                estadoActual = 'p47';
+                                pos++
+                                if (cadena[pos] == 'd' && estadoActual == 'p47') {
+                                    estadoActual = 'p48';
+                                    pos++
+                                    if (cadena[pos] == 'a' && estadoActual == 'p48') {
+                                        estadoActual = 'z';
+                                        palabrasClave.forEach(palabra => {
+                                            if (palabra == cadena) {
+                                                document.getElementById("estados").innerHTML = `
+                                                    <div class="content">
+                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                            <h6> Inscripción de clase – Búsqueda de clase </h6>
+                                                            <p class="grey-text text-darken-2"> Búsqueda de la asignatura para la inscripción o la inserción en el planificador. </p>    
+                                                        </a>
+                                                    </div>
+                                                    <div class="content">
+                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                            <h6>  Busqueda en Catalogo de Cursos </h6>
+                                                            <p class="grey-text text-darken-2"> Buscar los cursos ofertados por la universidad y su area de estudio asociada. </p>    
+                                                        </a>
+                                                    </div>   
+                                                `;
+                                            }
+                                        });
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
+        //c
+        if (cadena[pos] == 'c' && estadoActual == 'q0') {
+            estadoActual = 'q50';
+            pos++
 
+            //a
+            if (cadena[pos] == 'a' && estadoActual == 'q50') {
+                estadoActual = 'q51';
+                pos++
+                //calificaciones
+                if (cadena[pos] == 'l' && estadoActual == 'q51') {
+                    estadoActual = 'q52';
+                    pos++
+                    if (cadena[pos] == 'i' && estadoActual == 'q52') {
+                        estadoActual = 'q53';
+                        pos++
+                        if (cadena[pos] == 'f' && estadoActual == 'q53') {
+                            estadoActual = 'q54';
+                            pos++
+                            if (cadena[pos] == 'i' && estadoActual == 'q54') {
+                                estadoActual = 'q55';
+                                pos++
+                                if (cadena[pos] == 'c' && estadoActual == 'q55') {
+                                    estadoActual = 'q56';
+                                    pos++
+                                    if (cadena[pos] == 'a' && estadoActual == 'q56') {
+                                        estadoActual = 'q57';
+                                        pos++
+                                        if (cadena[pos] == 'c' && estadoActual == 'q57') {
+                                            estadoActual = 'q58';
+                                            pos++
+                                            if (cadena[pos] == 'i' && estadoActual == 'q58') {
+                                                estadoActual = 'q59';
+                                                pos++
+                                                if (cadena[pos] == 'o' && estadoActual == 'q59') {
+                                                    estadoActual = 'q60';
+                                                    pos++
+                                                    if (cadena[pos] == 'n' && estadoActual == 'q60') {
+                                                        estadoActual = 'q61';
+                                                        pos++
+                                                        if (cadena[pos] == 'e' && estadoActual == 'q61') {
+                                                            estadoActual = 'q62';
+                                                            pos++
+                                                            if (cadena[pos] == 's' && estadoActual == 'q62') {
+                                                                estadoActual = 'z';
+                                                                palabrasClave.forEach(palabra => {
+                                                                    if (palabra == cadena) {
+                                                                        document.getElementById("estados").innerHTML = `
+                                                                            <div class="content">
+                                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                                    <h6> Consulta Calificaciones </h6>
+                                                                                    <p class="grey-text text-darken-2"> Consultar las calificaciones de clases filtradas por ciclo academico. </p>    
+                                                                                </a>
+                                                                            </div>
+                                                                        `;
+                                                                    }
+                                                                });
+                                                                break;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //cambio
+                if (cadena[pos] == 'm' && estadoActual == 'q51') {
+                    estadoActual = 'q64';
+                    pos++
+                    if (cadena[pos] == 'b' && estadoActual == 'q64') {
+                        estadoActual = 'q65';
+                        pos++
+                        if (cadena[pos] == 'i' && estadoActual == 'q65') {
+                            estadoActual = 'q66';
+                            pos++
+                            if (cadena[pos] == 'o' && estadoActual == 'q66') {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                            <div class="content">
+                                                <a href="/views/consultaSaldoCuenta.html">
+                                                    <h6> Cambio Contraseña </h6>
+                                                    <p class="grey-text text-darken-2"> Cambiar la contraseña para el inicio de sesion del usuario. </p>    
+                                                </a>
+                                            </div>
+                                        `;
+                                    }
+                                });
+                                break;
+                            }
+                        }
+                    }
+                }
+                //cancelar
+                if (cadena[pos] == 'n' && estadoActual == 'q51') {
+                    estadoActual = 'q68';
+                    pos++
+                    if (cadena[pos] == 'c' && estadoActual == 'q68') {
+                        estadoActual = 'q69';
+                        pos++
+                        if (cadena[pos] == 'e' && estadoActual == 'q69') {
+                            estadoActual = 'q70';
+                            pos++
+                            if (cadena[pos] == 'l' && estadoActual == 'q70') {
+                                estadoActual = 'q71';
+                                pos++
+                                if (cadena[pos] == 'a' && estadoActual == 'q71') {
+                                    estadoActual = 'q72';
+                                    pos++
+                                    if (cadena[pos] == 'r' && estadoActual == 'q72') {
+                                        estadoActual = 'z';
+                                        palabrasClave.forEach(palabra => {
+                                            if (palabra == cadena) {
+                                                document.getElementById("estados").innerHTML = `
+                                                    <div class="content">
+                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                            <h6> Baja de Clases </h6>
+                                                            <p class="grey-text text-darken-2"> Cancelacion de clases. </p>    
+                                                        </a>
+                                                    </div>
+                                                `;
+                                            }
+                                        });
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //carnet
+                if (cadena[pos] == 'r' && estadoActual == 'q51') {
+                    estadoActual = 'q74';
+                    pos++
+                    if (cadena[pos] == 'n' && estadoActual == 'q74') {
+                        estadoActual = 'q75';
+                        pos++
+                        if (cadena[pos] == 'e' && estadoActual == 'q75') {
+                            estadoActual = 'q76';
+                            pos++
+                            if (cadena[pos] == 't' && estadoActual == 'q76') {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Carnet, Diploma y Grado </h6>
+                                                <p class="grey-text text-darken-2"> Generar los procesos necesarios realizar la ceremonia de grado. </p>    
+                                            </a>
+                                        </div>
+                                        `;
+                                    }
+                                });
+                                break;
+                            }
+                        }
+                    }
+                }
+                //catalogo
+                if (cadena[pos] == 't' && estadoActual == 'q51') {
+                    estadoActual = 'q78';
+                    pos++
+                    if (cadena[pos] == 'a' && estadoActual == 'q78') {
+                        estadoActual = 'q79';
+                        pos++
+                        if (cadena[pos] == 'l' && estadoActual == 'q79') {
+                            estadoActual = 'q80';
+                            pos++
+                            if (cadena[pos] == 'o' && estadoActual == 'q80') {
+                                estadoActual = 'q81';
+                                pos++
+                                if (cadena[pos] == 'g' && estadoActual == 'q81') {
+                                    estadoActual = 'q82';
+                                    pos++
+                                    if (cadena[pos] == 'o' && estadoActual == 'q82') {
+                                        estadoActual = 'z';
+                                        palabrasClave.forEach(palabra => {
+                                            if (palabra == cadena) {
+                                                document.getElementById("estados").innerHTML = `
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6>  Busqueda en Catalogo de Cursos </h6>
+                                                        <p class="grey-text text-darken-2"> Buscar los cursos ofertados por la universidad y su area de estudio asociada. </p>    
+                                                    </a>
+                                                </div> 
+                                                `;
+                                            }
+                                        });
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-        //final while
+            //certificados
+            if (cadena[pos] == 'e' && estadoActual == 'q50') {
+                estadoActual = 'q84';
+                pos++
+                if (cadena[pos] == 'r' && estadoActual == 'q84') {
+                    estadoActual = 'q85';
+                    pos++
+                    if (cadena[pos] == 't' && estadoActual == 'q85') {
+                        estadoActual = 'q86';
+                        pos++
+                        if (cadena[pos] == 'i' && estadoActual == 'q86') {
+                            estadoActual = 'q87';
+                            pos++
+                            if (cadena[pos] == 'f' && estadoActual == 'q87') {
+                                estadoActual = 'q88';
+                                pos++
+                                if (cadena[pos] == 'i' && estadoActual == 'q88') {
+                                    estadoActual = 'q89';
+                                    pos++
+                                    if (cadena[pos] == 'c' && estadoActual == 'q89') {
+                                        estadoActual = 'q90';
+                                        pos++
+                                        if (cadena[pos] == 'a' && estadoActual == 'q90') {
+                                            estadoActual = 'q91';
+                                            pos++
+                                            if (cadena[pos] == 'd' && estadoActual == 'q91') {
+                                                estadoActual = 'q92';
+                                                pos++
+                                                if (cadena[pos] == 'o' && estadoActual == 'q92') {
+                                                    estadoActual = 'q93';
+                                                    pos++
+                                                    if (cadena[pos] == 's' && estadoActual == 'q93') {
+                                                        estadoActual = 'z';
+                                                        palabrasClave.forEach(palabra => {
+                                                            if (palabra == cadena) {
+                                                                document.getElementById("estados").innerHTML = `
+                                                                <div class="content">
+                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                        <h6> Generar Tramite de Certificados </h6>
+                                                                        <p class="grey-text text-darken-2"> Realizar solicitudes de tramites de certificados </p>    
+                                                                    </a>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                        <h6> Consultar Estado de Tramites de Certificados </h6>
+                                                                        <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
+                                                                    </a>
+                                                                </div>
+                                                                `;
+                                                            }
+                                                        });
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            //cita
+            if (cadena[pos] == 'i' && estadoActual == 'q50') {
+                estadoActual = 'q95';
+                pos++
+                if (cadena[pos] == 't' && estadoActual == 'q95') {
+                    estadoActual = 'q96';
+                    pos++
+                    if (cadena[pos] == 'a' && estadoActual == 'q96') {
+                        estadoActual = 'z';
+                        palabrasClave.forEach(palabra => {
+                            if (palabra == cadena) {
+                                document.getElementById("estados").innerHTML = `
+                                <div class="content">
+                                    <a href="/views/consultaSaldoCuenta.html">
+                                        <h6> Citas de Inscripcion  </h6>
+                                        <p class="grey-text text-darken-2"> Consulta de la cita otorgada para la inscripción de materias del semestre. </p>    
+                                    </a>
+                                </div>
+                                `;
+                            }
+                        });
+                        break;
+                    }
+                }
+            }
+
+            //clase
+            if (cadena[pos] == 'l' && estadoActual == 'q50') {
+                estadoActual = 'q98';
+                pos++
+                if (cadena[pos] == 'a' && estadoActual == 'q98') {
+                    estadoActual = 'q99';
+                    pos++
+                    if (cadena[pos] == 's' && estadoActual == 'q99') {
+                        estadoActual = 'p1';
+                        pos++
+                        if (cadena[pos] == 'e' && estadoActual == 'p1') {
+                            estadoActual = 'p2';
+                            pos++
+                            //clases
+                            if (cadena[pos] == 's' && estadoActual == 'p2') {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Horario de Clases </h6>
+                                                <p class="grey-text text-darken-2"> Consultar el historial de cursos completados, en proceso, transferidos y planificados </p>    
+                                            </a>
+                                        </div> 
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Lista de Clases </h6>
+                                                <p class="grey-text text-darken-2"> Consulta las clases inscritas para el ciclo actual. </p>    
+                                            </a>
+                                        </div>                                                    
+                                        `;
+                                    }
+                                });
+                                break;
+                            } else {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Baja de Clases </h6>
+                                                <p class="grey-text text-darken-2"> Cancelacion de clases. </p>    
+                                            </a>
+                                        </div>                                                                    
+                                    `;
+                                    }
+                                });
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //o
+            if (cadena[pos] == 'o' && estadoActual == 'q50') {
+                estadoActual = 'p4';
+                pos++
+
+                //compensacion
+                if (cadena[pos] == 'm' && estadoActual == 'p4') {
+                    estadoActual = 'p5';
+                    pos++
+                    if (cadena[pos] == 'p' && estadoActual == 'p5') {
+                        estadoActual = 'p6';
+                        pos++
+                        if (cadena[pos] == 'e' && estadoActual == 'p6') {
+                            estadoActual = 'p7';
+                            pos++
+                            if (cadena[pos] == 'n' && estadoActual == 'p7') {
+                                estadoActual = 'p8';
+                                pos++
+                                if (cadena[pos] == 's' && estadoActual == 'p8') {
+                                    estadoActual = 'p9';
+                                    pos++
+                                    if (cadena[pos] == 'a' && estadoActual == 'p9') {
+                                        estadoActual = 'p10';
+                                        pos++
+                                        if (cadena[pos] == 'c' && estadoActual == 'p10') {
+                                            estadoActual = 'p11';
+                                            pos++
+                                            if (cadena[pos] == 'i' && estadoActual == 'p11') {
+                                                estadoActual = 'p12';
+                                                pos++
+                                                if (cadena[pos] == 'o' && estadoActual == 'p12') {
+                                                    estadoActual = 'p13';
+                                                    pos++
+                                                    if (cadena[pos] == 'n' && estadoActual == 'p13') {
+                                                        estadoActual = 'z';
+                                                        palabrasClave.forEach(palabra => {
+                                                            if (palabra == cadena) {
+                                                                document.getElementById("estados").innerHTML = `
+                                                                    <div class="content">
+                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                            <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                            <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="content">
+                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                            <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                            <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>
+                                                                        </a>
+                                                                    </div>
+                                                                `;
+                                                            }
+                                                        });
+                                                        break;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                //n
+                if (cadena[pos] == 'n' && estadoActual == 'p4') {
+                    estadoActual = 'p15';
+                    pos++
+
+                    //contraseña
+                    if (cadena[pos] == 't' && estadoActual == 'p15') {
+                        estadoActual = 'p16';
+                        pos++
+                        if (cadena[pos] == 'r' && estadoActual == 'p16') {
+                            estadoActual = 'p17';
+                            pos++
+                            if (cadena[pos] == 'a' && estadoActual == 'p17') {
+                                estadoActual = 'p18';
+                                pos++
+                                if (cadena[pos] == 's' && estadoActual == 'p18') {
+                                    estadoActual = 'p19';
+                                    pos++
+                                    if (cadena[pos] == 'e' && estadoActual == 'p19') {
+                                        estadoActual = 'p20';
+                                        pos++
+                                        if (cadena[pos] == 'ñ' && estadoActual == 'p20') {
+                                            estadoActual = 'p21';
+                                            pos++
+                                            if (cadena[pos] == 'a' && estadoActual == 'p21') {
+                                                estadoActual = 'z';
+                                                palabrasClave.forEach(palabra => {
+                                                    if (palabra == cadena) {
+                                                        document.getElementById("estados").innerHTML = `
+                                                            <div class="content">
+                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                    <h6> Cambio Contraseña </h6>
+                                                                    <p class="grey-text text-darken-2"> Cambiar la contraseña para el inicio de sesion del usuario. </p>    
+                                                                </a>
+                                                            </div>
+                                                        `;
+                                                    }
+                                                });
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    //consultar
+                    if (cadena[pos] == 's' && estadoActual == 'p15') {
+                        estadoActual = 'p23';
+                        pos++
+                        if (cadena[pos] == 'u' && estadoActual == 'p23') {
+                            estadoActual = 'p24';
+                            pos++
+                            if (cadena[pos] == 'l' && estadoActual == 'p24') {
+                                estadoActual = 'p25';
+                                pos++
+                                if (cadena[pos] == 't' && estadoActual == 'p25') {
+                                    estadoActual = 'p26';
+                                    pos++
+                                    if (cadena[pos] == 'a' && estadoActual == 'p26') {
+                                        estadoActual = 'p27';
+                                        pos++
+                                        if (cadena[pos] == 'r' && estadoActual == 'p27') {
+                                            estadoActual = 'z';
+                                            palabrasClave.forEach(palabra => {
+                                                if (palabra == cadena) {
+                                                    document.getElementById("estados").innerHTML = `
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Consultar Saldo de Cuenta </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el saldo total adeudado de la cuenta. </p>    
+                                                            </a>
+                                                        </div> 
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6>  Consultar Historial de Pagos </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Consultar Estado de Tramites de Certificados </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
+                                                            </a>
+                                                        </div>  
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Horario de Clases </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el historial de cursos completados, en proceso, transferidos y planificados </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Lista de Clases </h6>
+                                                                <p class="grey-text text-darken-2"> Consulta las clases inscritas para el ciclo actual. </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Consulta Calificaciones </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar las calificaciones de clases filtradas por ciclo academico. </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Consulta de Perfil </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el perfil del usuario </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Historial Cursos </h6>
+                                                                <p class="grey-text text-darken-2"> Historial Cursos </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Progreso Academico </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>
+                                                            </a>
+                                                        </div>
+                                                    `;
+                                                }
+                                            });
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            //u
+            if (cadena[pos] == 'u' && estadoActual == 'q50') {
+                estadoActual = 'p29';
+                pos++
+                //cuenta
+                if (cadena[pos] == 'e' && estadoActual == 'p29') {
+                    estadoActual = 'p30';
+                    pos++
+                    if (cadena[pos] == 'n' && estadoActual == 'p30') {
+                        estadoActual = 'p31';
+                        pos++
+                        if (cadena[pos] == 't' && estadoActual == 'p31') {
+                            estadoActual = 'p32';
+                            pos++
+                            if (cadena[pos] == 'a' && estadoActual == 'p32') {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Consultar Saldo de Cuenta </h6>
+                                                        <p class="grey-text text-darken-2"> Consultar el saldo total adeudado de la cuenta. </p>    
+                                                    </a>
+                                                </div>   
+                                            `;
+                                    }
+                                });
+                                break;
+                            }
+                        }
+                    }
+                }
+                //curso
+                if (cadena[pos] == 'r' && estadoActual == 'p29') {
+                    estadoActual = 'p34';
+                    pos++
+                    if (cadena[pos] == 's' && estadoActual == 'p34') {
+                        estadoActual = 'p35';
+                        pos++
+                        if (cadena[pos] == 'o' && estadoActual == 'p35') {
+                            estadoActual = 'p36';
+                            pos++
+                            //cursos
+                            if (cadena[pos] == 's' && estadoActual == 'p36') {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                            <div class="content">
+                                                <a href="/views/consultaSaldoCuenta.html">
+                                                    <h6>  Busqueda en Catalogo de Cursos </h6>
+                                                    <p class="grey-text text-darken-2"> Buscar los cursos ofertados por la universidad y su area de estudio asociada. </p>    
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="/views/consultaSaldoCuenta.html">
+                                                    <h6> Historial Cursos </h6>
+                                                    <p class="grey-text text-darken-2"> Historial Cursos </p>    
+                                                </a>
+                                            </div>
+                                        `;
+                                    }
+                                });
+                                break;
+                            } else {
+                                estadoActual = 'z';
+                                palabrasClave.forEach(palabra => {
+                                    if (palabra == cadena) {
+                                        document.getElementById("estados").innerHTML = `
+                                            <div class="content">
+                                                <a href="/views/consultaSaldoCuenta.html">
+                                                    <h6> Planificador </h6>
+                                                    <p class="grey-text text-darken-2"> Guardar una selección de materias previamente a la inscripción de materias en el ciclo. </p>    
+                                                </a>
+                                            </div>
+                                            <div class="content">
+                                                <a href="/views/consultaSaldoCuenta.html">
+                                                    <h6> Inscripción de clase – Número de Curso </h6>
+                                                    <p class="grey-text text-darken-2"> Inscripción de materias según el numero de la asignatura.</p>    
+                                                </a>
+                                            </div>
+                                        `;
+                                    }
+                                });
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         break;
     }
 
 }
-
-/*
-if (cadena[pos] == 'a' && estadoActual == 'p43') {
-                                    estadoActual = 'z';
-                                    palabrasClave.forEach(palabra => {
-                                        if (palabra == cadena) {
-                                            console.log(`Carnet, Diploma y Grado`)
-                                        }
-                                    });
-                                    break;
-                                }
-*/
