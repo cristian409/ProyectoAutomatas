@@ -10,4 +10,44 @@
 
 .container nav{
     background-color: unset;
+    height: 60px;
 }
+
+.container .estados{
+    text-align: left; 
+    background-color: ivory;
+    line-height: 16px; 
+    letter-spacing: 0px; 
+    font-weight: 400; 
+    border-color: rgb(74, 144, 226); 
+    border-style: solid; 
+    border-width: 1px; 
+    margin: 8px 0px 0px; 
+    border-radius: 3px; 
+    animation-duration: 300ms; 
+    opacity: 1; 
+    position: absolute;
+    width: 49%;
+    display: none;
+}
+
+.container .estados .content{
+   padding-left: 5px;
+}
+
+.container .estados .content:hover{
+    box-shadow: 9px 31px 56px -3px rgba(94,91,91,0.39);
+    -webkit-box-shadow: 9px 31px 56px -3px rgba(94,91,91,0.39);
+    -moz-box-shadow: 9px 31px 56px -3px rgba(94,91,91,0.39);
+ }
+ 
+
+.container.info h4{
+    font-weight: bold;
+}
+
+.container.info h5{
+    font-weight: bold;
+}
+
+

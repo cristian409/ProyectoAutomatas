@@ -29,7 +29,12 @@ function Busqueda() {
                             estadoActual = 'z';
                             palabrasClave.forEach(palabra => {
                                 if (palabra == cadena) {
-                                    console.log(`Consultar Saldo Cuenta`)
+                                    document.getElementById("content").innerHTML = `
+                                        <a href="/views/consultaSaldoCuenta.html">
+                                            <h6> Consultar Saldo de Cuenta </h6>
+                                            <p class="grey-text text-darken-2"> Consultar el saldo total adeudado de la cuenta. </p>    
+                                        </a>                                        
+                                    `;
                                 }
                             });
                             break;
