@@ -915,13 +915,13 @@ function Busqueda() {
                                                 if (palabra == cadena) {
                                                     document.getElementById("estados").innerHTML = `
                                                     <div class="content">
-                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                        <a href="/views/progresoAcademico.html">
                                                             <h6> Progreso Academico </h6>
                                                             <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
                                                         </a>
                                                     </div> 
                                                     <div class="content">
-                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                        <a href="/views/planAcademico.html">
                                                         <h6> Mi plan Academico </h6>
                                                         <p class="grey-text text-darken-2"> Observar el listado de las asignaturas del programa </p>    
                                                         </a>
@@ -975,13 +975,13 @@ function Busqueda() {
                                                             if (palabra == cadena) {
                                                                 document.getElementById("estados").innerHTML = `
                                                                     <div class="content">
-                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                        <a href="/views/inscripcionBecasAlimenta.html">
                                                                             <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
                                                                             <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
                                                                         </a>
                                                                     </div>
                                                                     <div class="content">
-                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                        <a href="/views/consultaInscriopcionBecasAli.html">
                                                                             <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
                                                                             <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>    
                                                                         </a>
@@ -1020,7 +1020,7 @@ function Busqueda() {
                                     if (palabra == cadena) {
                                         document.getElementById("estados").innerHTML = `
                                         <div class="content">
-                                            <a href="/views/consultaSaldoCuenta.html">
+                                            <a href="/views/planificador.html">
                                                 <h6> Planificador </h6>
                                                 <p class="grey-text text-darken-2"> Guardar una selección de materias previamente a la inscripción de materias en el ciclo. </p>    
                                             </a>
@@ -1066,19 +1066,19 @@ function Busqueda() {
                                                     if (palabra == cadena) {
                                                         document.getElementById("estados").innerHTML = `
                                                             <div class="content">
-                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                <a href="/views/inscripcionMateria.html">
                                                                     <h6> Inscripcion de Asignaturas </h6>
                                                                     <p class="grey-text text-darken-2"> Generar la inscripción de las materias o asignaturas del semestre. </p>    
                                                                 </a>
                                                             </div>
                                                             <div class="content">
-                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                <a href="/views/inscripcionNumeroCurso.html">
                                                                     <h6> Inscripción de clase – Número de Curso </h6>
                                                                     <p class="grey-text text-darken-2"> Inscripción de materias según el numero de la asignatura.</p>    
                                                                 </a>
                                                             </div>
                                                             <div class="content">
-                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                <a href="/views/incripcionBusquedaClase.html">
                                                                     <h6> Inscripción de clase – Búsqueda de clase </h6>
                                                                     <p class="grey-text text-darken-2"> Búsqueda de la asignatura para la inscripción o la inserción en el planificador. </p>    
                                                                 </a>
@@ -1117,7 +1117,7 @@ function Busqueda() {
                             if (palabra == cadena) {
                                 document.getElementById("estados").innerHTML = `
                                     <div class="content">
-                                        <a href="/views/consultaSaldoCuenta.html">
+                                        <a href="/views/bajaClases.html">
                                             <h6> Baja de Clases </h6>
                                             <p class="grey-text text-darken-2"> Cancelacion de clases. </p>    
                                         </a>
@@ -1146,13 +1146,13 @@ function Busqueda() {
                                 if (palabra == cadena) {
                                     document.getElementById("estados").innerHTML = `
                                         <div class="content">
-                                        <a href="/views/consultaSaldoCuenta.html">
+                                        <a href="/views/inscripcionBecasAlimenta.html">
                                             <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
                                             <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
                                         </a>
                                         </div>
                                         <div class="content">
-                                            <a href="/views/consultaSaldoCuenta.html">
+                                            <a href="/views/consultaInscriopcionBecasAli.html">
                                                 <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
                                                 <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>    
                                             </a>
@@ -1191,13 +1191,13 @@ function Busqueda() {
                                             if (palabra == cadena) {
                                                 document.getElementById("estados").innerHTML = `
                                                     <div class="content">
-                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                        <a href="/views/incripcionBusquedaClase.html">
                                                             <h6> Inscripción de clase – Búsqueda de clase </h6>
                                                             <p class="grey-text text-darken-2"> Búsqueda de la asignatura para la inscripción o la inserción en el planificador. </p>    
                                                         </a>
                                                     </div>
                                                     <div class="content">
-                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                        <a href="/views/busquedaCatalogoCurso.html">
                                                             <h6>  Busqueda en Catalogo de Cursos </h6>
                                                             <p class="grey-text text-darken-2"> Buscar los cursos ofertados por la universidad y su area de estudio asociada. </p>    
                                                         </a>
@@ -1264,7 +1264,7 @@ function Busqueda() {
                                                                     if (palabra == cadena) {
                                                                         document.getElementById("estados").innerHTML = `
                                                                             <div class="content">
-                                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                                <a href="/views/consultaNotas.html">
                                                                                     <h6> Consulta Calificaciones </h6>
                                                                                     <p class="grey-text text-darken-2"> Consultar las calificaciones de clases filtradas por ciclo academico. </p>    
                                                                                 </a>
@@ -1301,7 +1301,7 @@ function Busqueda() {
                                     if (palabra == cadena) {
                                         document.getElementById("estados").innerHTML = `
                                             <div class="content">
-                                                <a href="/views/consultaSaldoCuenta.html">
+                                                <a href="/views/cambiaContraseña.html">
                                                     <h6> Cambio Contraseña </h6>
                                                     <p class="grey-text text-darken-2"> Cambiar la contraseña para el inicio de sesion del usuario. </p>    
                                                 </a>
@@ -1336,7 +1336,7 @@ function Busqueda() {
                                             if (palabra == cadena) {
                                                 document.getElementById("estados").innerHTML = `
                                                     <div class="content">
-                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                        <a href="/views/bajaClases.html">
                                                             <h6> Baja de Clases </h6>
                                                             <p class="grey-text text-darken-2"> Cancelacion de clases. </p>    
                                                         </a>
@@ -1367,7 +1367,7 @@ function Busqueda() {
                                     if (palabra == cadena) {
                                         document.getElementById("estados").innerHTML = `
                                         <div class="content">
-                                            <a href="/views/consultaSaldoCuenta.html">
+                                            <a href="/views/carnetDiplomaGrado.html">
                                                 <h6> Carnet, Diploma y Grado </h6>
                                                 <p class="grey-text text-darken-2"> Generar los procesos necesarios realizar la ceremonia de grado. </p>    
                                             </a>
@@ -1402,7 +1402,7 @@ function Busqueda() {
                                             if (palabra == cadena) {
                                                 document.getElementById("estados").innerHTML = `
                                                 <div class="content">
-                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                    <a href="/views/busquedaCatalogoCurso.html">
                                                         <h6>  Busqueda en Catalogo de Cursos </h6>
                                                         <p class="grey-text text-darken-2"> Buscar los cursos ofertados por la universidad y su area de estudio asociada. </p>    
                                                     </a>
@@ -1456,13 +1456,13 @@ function Busqueda() {
                                                             if (palabra == cadena) {
                                                                 document.getElementById("estados").innerHTML = `
                                                                 <div class="content">
-                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                    <a href="/views/generarTramiteCertificado.html">
                                                                         <h6> Generar Tramite de Certificados </h6>
                                                                         <p class="grey-text text-darken-2"> Realizar solicitudes de tramites de certificados </p>    
                                                                     </a>
                                                                 </div>
                                                                 <div class="content">
-                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                    <a href="/views/consultarEstadoTramiteC.html">
                                                                         <h6> Consultar Estado de Tramites de Certificados </h6>
                                                                         <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
                                                                     </a>
@@ -1496,7 +1496,7 @@ function Busqueda() {
                             if (palabra == cadena) {
                                 document.getElementById("estados").innerHTML = `
                                 <div class="content">
-                                    <a href="/views/consultaSaldoCuenta.html">
+                                    <a href="/views/citasInscripcion.html">
                                         <h6> Citas de Inscripcion  </h6>
                                         <p class="grey-text text-darken-2"> Consulta de la cita otorgada para la inscripción de materias del semestre. </p>    
                                     </a>
@@ -1529,13 +1529,13 @@ function Busqueda() {
                                     if (palabra == cadena) {
                                         document.getElementById("estados").innerHTML = `
                                         <div class="content">
-                                            <a href="/views/consultaSaldoCuenta.html">
+                                            <a href="/views/horarioClases.html">
                                                 <h6> Horario de Clases </h6>
                                                 <p class="grey-text text-darken-2"> Consultar el historial de cursos completados, en proceso, transferidos y planificados </p>    
                                             </a>
                                         </div> 
                                         <div class="content">
-                                            <a href="/views/consultaSaldoCuenta.html">
+                                            <a href="/views/lista.html">
                                                 <h6> Lista de Clases </h6>
                                                 <p class="grey-text text-darken-2"> Consulta las clases inscritas para el ciclo actual. </p>    
                                             </a>
@@ -1550,7 +1550,7 @@ function Busqueda() {
                                     if (palabra == cadena) {
                                         document.getElementById("estados").innerHTML = `
                                         <div class="content">
-                                            <a href="/views/consultaSaldoCuenta.html">
+                                            <a href="/views/bajaClases.html">
                                                 <h6> Baja de Clases </h6>
                                                 <p class="grey-text text-darken-2"> Cancelacion de clases. </p>    
                                             </a>
@@ -1604,13 +1604,13 @@ function Busqueda() {
                                                             if (palabra == cadena) {
                                                                 document.getElementById("estados").innerHTML = `
                                                                     <div class="content">
-                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                        <a href="/views/inscripcionBecasAlimenta.html">
                                                                             <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
                                                                             <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>
                                                                         </a>
                                                                     </div>
                                                                     <div class="content">
-                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                        <a href="/views/consultaInscriopcionBecasAli.html">
                                                                             <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
                                                                             <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>
                                                                         </a>
@@ -1660,7 +1660,7 @@ function Busqueda() {
                                                     if (palabra == cadena) {
                                                         document.getElementById("estados").innerHTML = `
                                                             <div class="content">
-                                                                <a href="/views/consultaSaldoCuenta.html">
+                                                                <a href="/views/cambiaContraseña.html">
                                                                     <h6> Cambio Contraseña </h6>
                                                                     <p class="grey-text text-darken-2"> Cambiar la contraseña para el inicio de sesion del usuario. </p>    
                                                                 </a>
@@ -1705,55 +1705,55 @@ function Busqueda() {
                                                             </a>
                                                         </div> 
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/consultarHistorialPago.html">
                                                                 <h6>  Consultar Historial de Pagos </h6>
                                                                 <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/consultarEstadoTramiteC.html">
                                                                 <h6> Consultar Estado de Tramites de Certificados </h6>
                                                                 <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
                                                             </a>
                                                         </div>  
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/horarioClases.html">
                                                                 <h6> Horario de Clases </h6>
                                                                 <p class="grey-text text-darken-2"> Consultar el historial de cursos completados, en proceso, transferidos y planificados </p>    
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/lista.html">
                                                                 <h6> Lista de Clases </h6>
                                                                 <p class="grey-text text-darken-2"> Consulta las clases inscritas para el ciclo actual. </p>    
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/consultaNotas.html">
                                                                 <h6> Consulta Calificaciones </h6>
                                                                 <p class="grey-text text-darken-2"> Consultar las calificaciones de clases filtradas por ciclo academico. </p>    
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/consultaPerfil.html">
                                                                 <h6> Consulta de Perfil </h6>
                                                                 <p class="grey-text text-darken-2"> Consultar el perfil del usuario </p>    
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/historialCurso.html">
                                                                 <h6> Historial Cursos </h6>
                                                                 <p class="grey-text text-darken-2"> Historial Cursos </p>    
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/progresoAcademico.html">
                                                                 <h6> Progreso Academico </h6>
                                                                 <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
                                                             </a>
                                                         </div>
                                                         <div class="content">
-                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                            <a href="/views/consultaInscriopcionBecasAli.html">
                                                                 <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
                                                                 <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>
                                                             </a>
@@ -1822,13 +1822,13 @@ function Busqueda() {
                                     if (palabra == cadena) {
                                         document.getElementById("estados").innerHTML = `
                                             <div class="content">
-                                                <a href="/views/consultaSaldoCuenta.html">
+                                                <a href="/views/busquedaCatalogoCurso.html">
                                                     <h6>  Busqueda en Catalogo de Cursos </h6>
                                                     <p class="grey-text text-darken-2"> Buscar los cursos ofertados por la universidad y su area de estudio asociada. </p>    
                                                 </a>
                                             </div>
                                             <div class="content">
-                                                <a href="/views/consultaSaldoCuenta.html">
+                                                <a href="/views/historialCurso.html">
                                                     <h6> Historial Cursos </h6>
                                                     <p class="grey-text text-darken-2"> Historial Cursos </p>    
                                                 </a>
@@ -1843,13 +1843,13 @@ function Busqueda() {
                                     if (palabra == cadena) {
                                         document.getElementById("estados").innerHTML = `
                                             <div class="content">
-                                                <a href="/views/consultaSaldoCuenta.html">
+                                                <a href="/views/planificador.html">
                                                     <h6> Planificador </h6>
                                                     <p class="grey-text text-darken-2"> Guardar una selección de materias previamente a la inscripción de materias en el ciclo. </p>    
                                                 </a>
                                             </div>
                                             <div class="content">
-                                                <a href="/views/consultaSaldoCuenta.html">
+                                                <a href="/views/inscripcionNumeroCurso.html">
                                                     <h6> Inscripción de clase – Número de Curso </h6>
                                                     <p class="grey-text text-darken-2"> Inscripción de materias según el numero de la asignatura.</p>    
                                                 </a>
