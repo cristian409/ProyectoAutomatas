@@ -32,11 +32,13 @@ function Busqueda() {
                             estadoActual = 'z';
                             palabrasClave.forEach(palabra => {
                                 if (palabra == cadena) {
-                                    document.getElementById("content").innerHTML = `
-                                        <a href="/views/consultaSaldoCuenta.html">
-                                            <h6> Consultar Saldo de Cuenta </h6>
-                                            <p class="grey-text text-darken-2"> Consultar el saldo total adeudado de la cuenta. </p>    
-                                        </a>                                        
+                                    document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Consultar Saldo de Cuenta </h6>
+                                                <p class="grey-text text-darken-2"> Consultar el saldo total adeudado de la cuenta. </p>    
+                                            </a>
+                                        </div>                                                                      
                                     `;
                                 }
                             });
@@ -72,9 +74,26 @@ function Busqueda() {
                                             estadoActual = 'z';
                                             palabrasClave.forEach(palabra => {
                                                 if (palabra == cadena) {
-                                                    console.log(`Generar Tramite de Certificados,                                                                                   
-                                                                Consultar Estado de Tramites de Certificados,  
-                                                                Carnet, Diploma y Grado`)
+                                                    document.getElementById("estados").innerHTML = `
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Generar Tramite de Certificados </h6>
+                                                                <p class="grey-text text-darken-2"> Realizar solicitudes de tramites de certificados </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Consultar Estado de Tramites de Certificados </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
+                                                            </a>
+                                                        </div>  
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Carnet, Diploma y Grado </h6>
+                                                                <p class="grey-text text-darken-2"> Generar los procesos necesarios realizar la ceremonia de grado. </p>    
+                                                            </a>
+                                                        </div>                                                                    
+                                                    `;
                                                 }
                                             });
                                             break;
@@ -110,8 +129,20 @@ function Busqueda() {
                                         estadoActual = 'z';
                                         palabrasClave.forEach(palabra => {
                                             if (palabra == cadena) {
-                                                console.log(`Inscripción de Becas de Compesación y Subsidio de Alimentación,
-                                                              Consultar formulario de  Becas de Compesación y Subsidio de Alimentación`)
+                                                document.getElementById("estados").innerHTML = `
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6>  Consultar formulario de  Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                <p class="grey-text text-darken-2"> Consulta de la solicitud para la convocatoria de promoción socioeconómica. </p>    
+                                                            </a>
+                                                        </div>                                                                      
+                                                    `;
                                             }
                                         });
                                         break;
@@ -141,8 +172,20 @@ function Busqueda() {
                         estadoActual = 'z';
                         palabrasClave.forEach(palabra => {
                             if (palabra == cadena) {
-                                console.log(`Generar Recibo de Pago,      
-                                            Consultar Historial de Pagos`)
+                                document.getElementById("estados").innerHTML = `
+                                    <div class="content">
+                                        <a href="/views/consultaSaldoCuenta.html">
+                                            <h6> Generar Recibo de Pago </h6>
+                                            <p class="grey-text text-darken-2"> Generar los archivos pdf o realizar el pago en línea de los recibos de pagos </p>    
+                                        </a>
+                                    </div>
+                                    <div class="content">
+                                        <a href="/views/consultaSaldoCuenta.html">
+                                            <h6>  Consultar Historial de Pagos </h6>
+                                            <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
+                                        </a>
+                                    </div>                                                                      
+                                `;
                             }
                         });
                         break;
@@ -166,7 +209,14 @@ function Busqueda() {
                                 estadoActual = 'z';
                                 palabrasClave.forEach(palabra => {
                                     if (palabra == cadena) {
-                                        console.log(`Consulta de Perfil`)
+                                        document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Consulta de Perfil </h6>
+                                                <p class="grey-text text-darken-2"> Consultar el perfil del usuario </p>    
+                                            </a>
+                                        </div>                                                                   
+                                    `;
                                     }
                                 });
                                 break;
@@ -211,7 +261,14 @@ function Busqueda() {
                                                         estadoActual = 'z';
                                                         palabrasClave.forEach(palabra => {
                                                             if (palabra == cadena) {
-                                                                console.log(`Planificador`)
+                                                                document.getElementById("estados").innerHTML = `
+                                                                    <div class="content">
+                                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                                            <h6> Planificador </h6>
+                                                                            <p class="grey-text text-darken-2"> Guardar una selección de materias previamente a la inscripción de materias en el ciclo. </p>    
+                                                                        </a>
+                                                                    </div>                                                                   
+                                                                `;
                                                             }
                                                         });
                                                         break;
@@ -226,7 +283,14 @@ function Busqueda() {
                             estadoActual = 'z';
                             palabrasClave.forEach(palabra => {
                                 if (palabra == cadena) {
-                                    console.log(`Mi Plan Academico`)
+                                    document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Mi Plan Academico </h6>
+                                                <p class="grey-text text-darken-2"> Observar el listado de las asignaturas del programa </p>    
+                                            </a>
+                                        </div>                                                                   
+                                    `;
                                 }
                             });
                             break;
@@ -257,7 +321,14 @@ function Busqueda() {
                                         estadoActual = 'z';
                                         palabrasClave.forEach(palabra => {
                                             if (palabra == cadena) {
-                                                console.log(`Progreso Academico`)
+                                                document.getElementById("estados").innerHTML = `
+                                                    <div class="content">
+                                                        <a href="/views/consultaSaldoCuenta.html">
+                                                            <h6> Progreso Academico </h6>
+                                                            <p class="grey-text text-darken-2"> Consultar el progreso de unidades finalizadas de la carrera. </p>    
+                                                        </a>
+                                                    </div>                                                                   
+                                                `;
                                             }
                                         });
                                         break;
@@ -293,9 +364,26 @@ function Busqueda() {
                                     estadoActual = 'z';
                                     palabrasClave.forEach(palabra => {
                                         if (palabra == cadena) {
-                                            console.log(`Generar Tramite de Certificados                                                                                   
-                                                        Consultar Estado de Tramites de Certificados                                                              
-                                                        Carnet, Diploma y Grado`)
+                                            document.getElementById("estados").innerHTML = `
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Generar Tramite de Certificados </h6>
+                                                        <p class="grey-text text-darken-2"> Realizar solicitudes de tramites de certificados </p>    
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Consultar Estado de Tramites de Certificados </h6>
+                                                        <p class="grey-text text-darken-2"> Consultar el estado actual de las solicitudes de tramites de certificados. </p>    
+                                                    </a>
+                                                </div>  
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Carnet, Diploma y Grado </h6>
+                                                        <p class="grey-text text-darken-2"> Generar los procesos necesarios realizar la ceremonia de grado. </p>    
+                                                    </a>
+                                                </div>                                                                     
+                                            `;
                                         }
                                     });
                                     break;
@@ -327,7 +415,14 @@ function Busqueda() {
                                 estadoActual = 'z';
                                 palabrasClave.forEach(palabra => {
                                     if (palabra == cadena) {
-                                        console.log(`Generar Recibo de Pago`)
+                                        document.getElementById("estados").innerHTML = `
+                                            <div class="content">
+                                                <a href="/views/consultaSaldoCuenta.html">
+                                                    <h6> Generar Recibo de Pago </h6>
+                                                    <p class="grey-text text-darken-2"> Generar los archivos pdf o realizar el pago en línea de los recibos de pagos </p>    
+                                                </a>
+                                            </div>                                                                    
+                                        `;
                                     }
                                 });
                                 break;
@@ -355,8 +450,20 @@ function Busqueda() {
                             estadoActual = 'z';
                             palabrasClave.forEach(palabra => {
                                 if (palabra == cadena) {
-                                    console.log(`Lista de Clases                              
-                                                Mi plan Academico`)
+                                    document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Lista de Clases </h6>
+                                                <p class="grey-text text-darken-2"> Consulta las clases inscritas para el ciclo actual. </p>    
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Mi plan Academico </h6>
+                                                <p class="grey-text text-darken-2"> Observar el listado de las asignaturas del programa </p>    
+                                            </a>
+                                        </div>                                                                 
+                                    `;
                                 }
                             });
                             break;
@@ -389,10 +496,32 @@ function Busqueda() {
                                     estadoActual = 'z';
                                     palabrasClave.forEach(palabra => {
                                         if (palabra == cadena) {
-                                            console.log(`Citas de Inscripcion                                                                                                              
-                                                        Inscripcion de Asignaturas                                                                                       
-                                                        Inscripción de clase – Número de Curso                                                           
-                                                        Inscripción de clase – Búsqueda de clase`)
+                                            document.getElementById("estados").innerHTML = `
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Citas de Inscripcion  </h6>
+                                                        <p class="grey-text text-darken-2"> Consulta de la cita otorgada para la inscripción de materias del semestre. </p>    
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Inscripcion de Asignaturas </h6>
+                                                        <p class="grey-text text-darken-2"> Generar la inscripción de las materias o asignaturas del semestre. </p>    
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Inscripción de clase – Número de Curso </h6>
+                                                        <p class="grey-text text-darken-2"> Inscripción de materias según el numero de la asignatura.</p>    
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Inscripción de clase – Búsqueda de clase </h6>
+                                                        <p class="grey-text text-darken-2"> Búsqueda de la asignatura para la inscripción o la inserción en el planificador. </p>    
+                                                    </a>
+                                                </div>                                                              
+                                            `;
                                         }
                                     });
                                     break;
@@ -427,7 +556,14 @@ function Busqueda() {
                                     estadoActual = 'z';
                                     palabrasClave.forEach(palabra => {
                                         if (palabra == cadena) {
-                                            console.log(`Carnet, Diploma y Grado`)
+                                            document.getElementById("estados").innerHTML = `
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Carnet, Diploma y Grado </h6>
+                                                        <p class="grey-text text-darken-2"> Generar los procesos necesarios realizar la ceremonia de grado. </p>    
+                                                    </a>
+                                                </div>
+                                            `;
                                         }
                                     });
                                     break;
@@ -470,7 +606,14 @@ function Busqueda() {
                                             estadoActual = 'z';
                                             palabrasClave.forEach(palabra => {
                                                 if (palabra == cadena) {
-                                                    console.log(`Generar Recibo de Pago`)
+                                                    document.getElementById("estados").innerHTML = `
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Generar Recibo de Pago </h6>
+                                                                <p class="grey-text text-darken-2"> Generar los archivos pdf o realizar el pago en línea de los recibos de pagos </p>    
+                                                            </a>
+                                                        </div>
+                                                    `;
                                                 }
                                             });
                                             break;
@@ -514,11 +657,38 @@ function Busqueda() {
                                                     estadoActual = 'z';
                                                     palabrasClave.forEach(palabra => {
                                                         if (palabra == cadena) {
-                                                            console.log(`Citas de Inscripcion                                                                                                                
-                                                                        Inscripcion de Asignaturas                                                                                                 
-                                                                        Inscripción de clase – Número de Curso                                                                 
-                                                                        Inscripción de clase – Búsqueda de clase                                                              
-                                                                        Inscripción de Becas de Compesación y Subsidio de Alimentación`)
+                                                            document.getElementById("estados").innerHTML = `
+                                                                <div class="content">
+                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                        <h6> Citas de Inscripcion </h6>
+                                                                        <p class="grey-text text-darken-2"> Consulta de la cita otorgada para la inscripción de materias del semestre. </p>    
+                                                                    </a>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                        <h6> Inscripcion de Asignaturas </h6>
+                                                                        <p class="grey-text text-darken-2"> Generar la inscripción de las materias o asignaturas del semestre. </p>    
+                                                                    </a>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                        <h6> Inscripción de clase – Número de Curso </h6>
+                                                                        <p class="grey-text text-darken-2"> Inscripción de materias según el numero de la asignatura. </p>    
+                                                                    </a>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                        <h6> Inscripción de clase – Búsqueda de clase </h6>
+                                                                        <p class="grey-text text-darken-2"> Búsqueda de la asignatura para la inscripción o la inserción en el planificador. </p>    
+                                                                    </a>
+                                                                </div>
+                                                                <div class="content">
+                                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                                        <h6> Inscripción de Becas de Compesación y Subsidio de Alimentación </h6>
+                                                                        <p class="grey-text text-darken-2"> Crear solicitud de becas de compensación y subsidio de alimentación de promoción socioeconómica </p>    
+                                                                    </a>
+                                                                </div>
+                                                            `;
                                                         }
                                                     });
                                                     break;
@@ -566,8 +736,20 @@ function Busqueda() {
                                             estadoActual = 'z';
                                             palabrasClave.forEach(palabra => {
                                                 if (palabra == cadena) {
-                                                    console.log(`Consultar Historia de Pagos                                                                                                   
-                                                                Historial Cursos`)
+                                                    document.getElementById("estados").innerHTML = `
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Consultar Historia de Pagos </h6>
+                                                                <p class="grey-text text-darken-2"> Consultar el saldo total adeudado de la cuenta. </p>    
+                                                            </a>
+                                                        </div>
+                                                        <div class="content">
+                                                            <a href="/views/consultaSaldoCuenta.html">
+                                                                <h6> Historial Cursos </h6>
+                                                                <p class="grey-text text-darken-2"> Historial Cursos </p>    
+                                                            </a>
+                                                        </div>
+                                                    `;
                                                 }
                                             });
                                             break;
@@ -599,7 +781,14 @@ function Busqueda() {
                                     estadoActual = 'z';
                                     palabrasClave.forEach(palabra => {
                                         if (palabra == cadena) {
-                                            console.log(`Horario de Clases`)
+                                            document.getElementById("estados").innerHTML = `
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Horario de Clases </h6>
+                                                        <p class="grey-text text-darken-2"> Consultar el historial de cursos completados, en proceso, transferidos y planificados </p>    
+                                                    </a>
+                                                </div>
+                                            `;
                                         }
                                     });
                                     break;
@@ -637,7 +826,14 @@ function Busqueda() {
                                     estadoActual = 'z';
                                     palabrasClave.forEach(palabra => {
                                         if (palabra == cadena) {
-                                            console.log(`Generar Recibo de Pago`)
+                                            document.getElementById("estados").innerHTML = `
+                                                <div class="content">
+                                                    <a href="/views/consultaSaldoCuenta.html">
+                                                        <h6> Generar Recibo de Pago </h6>
+                                                        <p class="grey-text text-darken-2"> Generar los archivos pdf o realizar el pago en línea de los recibos de pagos </p>    
+                                                    </a>
+                                                </div>
+                                            `;
                                         }
                                     });
                                     break;
@@ -661,6 +857,14 @@ function Busqueda() {
                             estadoActual = 'z';
                             palabrasClave.forEach(palabra => {
                                 if (palabra == cadena) {
+                                    document.getElementById("estados").innerHTML = `
+                                        <div class="content">
+                                            <a href="/views/consultaSaldoCuenta.html">
+                                                <h6> Carnet, Diploma y Grado </h6>
+                                                <p class="grey-text text-darken-2"> Generar los procesos necesarios realizar la ceremonia de grado. de los recibos de pagos </p>    
+                                            </a>
+                                        </div>
+                                    `;
                                     console.log(`Carnet, Diploma y Grado`)
                                 }
                             });

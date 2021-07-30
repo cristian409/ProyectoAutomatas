@@ -36,9 +36,9 @@
 }
 
 .container .estados .content:hover{
-    box-shadow: 9px 31px 56px -3px rgba(94,91,91,0.39);
-    -webkit-box-shadow: 9px 31px 56px -3px rgba(94,91,91,0.39);
-    -moz-box-shadow: 9px 31px 56px -3px rgba(94,91,91,0.39);
+    box-shadow: 6px 12px 248px 18px rgba(0,0,0,0.48);
+    -webkit-box-shadow: 6px 12px 248px 18px rgba(0,0,0,0.48);
+    -moz-box-shadow: 6px 12px 248px 18px rgba(0,0,0,0.48);
  }
  
 
